@@ -1,5 +1,7 @@
 package ru.skillbranch.devintensive.utils
 
+import android.util.Log
+
 object Utils {
     fun parseFullName(fullName: String?): Pair<String?, String?>{
         val parts = fullName?.split(" ")
@@ -23,6 +25,7 @@ object Utils {
                 tChar
             }
         }
+        Log.d("Utils", "")
         return result.replace(" ", devider)
     }
 
